@@ -15,20 +15,10 @@
 <body>
   <div class="sidebar close">
     <div class="logo-details">
-      <i class='bx bxl-mailchimp'></i>
+      <i class='bx bx-user'></i>
       <span class="logo_name">Admin</span>
     </div>
     <ul class="nav-links">
-      <li>
-
-        <a href="{{ route('admin.dashboard') }}">
-            <i class='bx bx-grid-alt'></i>
-            <span class="link_name">Dashboard</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Dashboard</a></li>
-        </ul>
-      </li>
 
       <li>
         <div class="iocn-link">
@@ -56,16 +46,13 @@
       </li>
       <li>
         <div class="iocn-link">
-          <a href="#">
+          <a href="{{ route('viewSupplier') }}">
             <i class='bx bx-list-plus'></i>
-            <span class="link_name">More</span>
+            <span class="link_name">Supplier</span>
           </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
         </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">More</a></li>
-          <li><a href="{{ route('viewSupplier') }}">Supplier</a></li>
-          <li><a href="{{ route('viewUser') }}">Customer</a></li>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="{{ route('viewSupplier') }}">Supplier</a></li>
         </ul>
       </li>
       <li>

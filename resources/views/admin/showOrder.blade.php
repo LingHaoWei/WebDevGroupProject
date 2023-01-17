@@ -37,7 +37,6 @@
                 </thead>
                 <tbody>
                 @foreach($or as $ord)
-                    @if($ord->status == 'Cancelled')
                     <tr>
                     <td width="60">
                     </td>
@@ -46,7 +45,14 @@
                     </td>
                     <td>{{$ord->paymentStatus}}</td>
                     <td>{{ $ord->username }}</td>
-                    <td>{{$ord->status}}</td>
+                    @if($ord->status == 'Fulfilled')
+                    <td><span class="badge badge-success">{{$ord->status}}</span></td>
+                    @elseif($ord->status == 'Cancelled')
+                    <td><span class="badge badge-fail">{{$ord->status}}</span></td>
+                    @else
+                    <td><span class="badge badge-processing">{{$ord->status}}</span></td>
+                    @endif
+                    
                     <td>
                         <Button type="button" class="editBtn">
                         <a href="{{ route('editOrder',['id'=>$ord->orderID]) }}" class="editOrder fa fa-edit" title="Edit" data-toggle="tooltip"></a>
@@ -54,24 +60,7 @@
                     </td>
                     
                     </tr>  
-                    @else
-                    <tr>
-                    <td width="60">
-                    </td>
-                    <td class="link">
-                        <a href="{{ route('editOrder',['id'=>$ord->orderID]) }}" class="editOrder" title="Edit" data-toggle="tooltip"><div class="p-2">#{{$ord->orderID}}</div></a>
-                    </td>
-                    <td>{{$ord->paymentStatus}}</td>
-                    <td>{{ $ord->username }}</td>
-                    <td>{{$ord->status}}</td>
-                    <td>
-                        <Button type="button" class="editBtn">
-                        <a href="{{ route('editOrder',['id'=>$ord->orderID]) }}" class="editOrder fa fa-edit" title="Edit" data-toggle="tooltip"></a>
-                        </Button>
-                    </td>
-                    
-                    </tr>
-                    @endif
+
                 @endforeach
                 </tbody>
             </table>

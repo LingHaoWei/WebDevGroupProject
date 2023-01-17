@@ -42,7 +42,6 @@
                 </ul>
 			  </li>
 
-              <li class="nav-item"><a class="nav-link" href="{{ url('shoppingContactPage') }}">Contact</a></li>
             </ul>
 
             <ul class="nav-shop">

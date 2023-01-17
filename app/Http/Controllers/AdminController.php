@@ -17,7 +17,7 @@ class AdminController extends Controller
 
         if(Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password],$request->get('remember'))){
 
-            return redirect()->route('admin.dashboard');
+            return redirect()->route('viewProduct');
 
         }else{
             session()->flash('error','Either Email/Password is incorrect');

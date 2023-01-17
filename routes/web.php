@@ -32,10 +32,6 @@ Route::get('/customerRegisterPage', function () {
     return view('customerRegisterPage');
 });
 
-Route::get('/shoppingContactPage', function () {
-    return view('shoppingContactPage');
-});
-
 Route::post('/addCart', [App\Http\Controllers\CartController::class, 'add'])->name('addCart');
 Route::get('/shoppingCartPage', [App\Http\Controllers\CartController::class, 'showMyCart'])->name('myCart');
 Route::get('/deleteItem/{id}', [App\Http\Controllers\CartController::class, 'delete'])->name('deleteCart');
@@ -68,7 +64,6 @@ Route::group(['prefix' => 'admin'], function() {
 	});
 
 	Route::group(['middleware' => 'admin.auth'], function(){
-		Route::get('/dashboard',[App\Http\Controllers\DashboardController::class, 'dashboard'])->name('admin.dashboard');
 
         //Brand Route
         Route::get('/insertBrand', [App\Http\Controllers\BrandController::class, 'brand'])->name('insertBrand');
@@ -101,11 +96,6 @@ Route::group(['prefix' => 'admin'], function() {
         Route::post('/updateProduct', [App\Http\Controllers\ProductController::class, 'update'])->name('updateProduct');
         Route::get('/deleteProduct/{id}', [App\Http\Controllers\ProductController::class, 'delete'])->name('deleteProduct');
         Route::post('/adminSearchProduct', [App\Http\Controllers\ProductController::class, 'adminSearchProduct'])->name('search.adminProduct');
-        Route::get('/uploadProduct', [App\Http\Controllers\ProductController::class, 'uplaod'])->name('uploadProduct');
-        Route::post('/storeUpProduct', [App\Http\Controllers\ProductController::class, 'uploadContent'])->name('storeUpProduct');
-        Route::get('/bulkUploadInstruction', function () {
-            return view('admin.bulkUploadInstruction');
-        });
 
         //Supplier Route
         Route::get('/insertSupplier', [App\Http\Controllers\SupplierController::class, 'supplier'])->name('insertSupplier');

@@ -618,5 +618,29 @@ ul.pagination li a {
   border-radius: 5px;
 }
 
+.badge-success {
+  background-color: rgb(105, 177, 105);
+  color: white;
+  font-size: small;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.badge-fail {
+  background-color: rgb(197, 107, 107);
+  color: white;
+  font-size: small;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.badge-processing {
+  background-color: rgb(223, 157, 95);
+  color: white;
+  font-size: small;
+  padding: 5px;
+  border-radius: 6px;
+}
+
 /*--- --- --- Edit from css --- --- ---*/
 

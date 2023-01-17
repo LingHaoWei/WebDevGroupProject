@@ -35,7 +35,7 @@
                 <thead>
                     <tr>
                     <th></th>
-                    <th>Supplier ID</th>
+
                     <th>Company Name</th>
                     <th>Contact Person</th>
                     <th>Status</th>
@@ -47,12 +47,16 @@
                     <tr>
                     <td width="60"> 
                     </td>
-                    <td>{{$suppliers->supplierID}}</td>
+
                     <td>
                         <a href="{{ route('editSupplier',['id'=>$suppliers->id]) }}" style="color:black; text-decoration:none;">{{$suppliers->supplierName}}</a>
                     </td>
                     <td>{{$suppliers->contactPerson}}</td>
-                    <td>{{$suppliers->status}}</td>
+                    @if($suppliers->status == 'Available')
+                    <td><span class="badge badge-success">{{$suppliers->status}}</span></td>
+                    @elseif($suppliers->status == 'Unavailable')
+                    <td><span class="badge badge-fail">{{$suppliers->status}}</span></td>
+                    @endif
                     <td>
                         <Button type="button" class="editBtn">
                             <a href="{{ route('editSupplier',['id'=>$suppliers->id]) }}" class="editCategory fa fa-edit" title="Edit" data-toggle="tooltip"></a>

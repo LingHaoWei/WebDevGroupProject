@@ -35,7 +35,7 @@
                 <thead>
                     <tr>
                     <th scope="col"></th>
-                    <th>CategoryID</th>
+
                     <th>Name</th>
                     <th>Status</th>
                     <th>Option</th>
@@ -46,9 +46,13 @@
                     <tr>
                     <td width="60"> 
                     </td>
-                    <td>{{$categories->categoryID}}</td>
+
                     <td>{{$categories->name}}</td>
-                    <td>{{$categories->status}}</td>
+                    @if($categories->status == 'Available')
+                    <td><span class="badge badge-success">{{$categories->status}}</span></td>
+                    @elseif($categories->status == 'Unavailable')
+                    <td><span class="badge badge-fail">{{$categories->status}}</span></td>
+                    @endif
                     <td>
                         <Button type="button" class="editBtn">
                             <a href="{{ route('editCategory',['id'=>$categories->id]) }}" class="editCategory fa fa-edit" title="Edit" data-toggle="tooltip"></a>
