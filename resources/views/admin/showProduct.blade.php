@@ -28,7 +28,7 @@
             <div class="addProBtn">
                 <div class="p-3">
                     <Button type="button" class="addButton">
-                        <a href="{{ route('insertProduct') }}" class="addProduct" title="New" data-toggle="tooltip">+Add Product</a>
+                        <a href="{{ route('insertProduct') }}" class="addProduct" title="New" data-toggle="tooltip"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Add Product</a>
                     </Button>
                 </div>
             </div>
@@ -65,31 +65,31 @@
                 <td width="50">
                 </td>
                 <td class="link">
-                    <a href="{{ route('editProduct',['id'=>$product->id]) }}"><div class="p-2" style="color: red">{{$product->productID}}</div></a>
+                    <div class="p-2" style="color: red; font-weight: bold;">{{$product->productID}}</div>
                 </td>
                 <td class="link">
-                <a href="{{ route('editProduct',['id'=>$product->id]) }}"><img src="{{asset('images/')}}/{{$product->image}}" alt="" width="60" height="50"></a>
-                    <a href="{{ route('editProduct',['id'=>$product->id]) }}"><div class="p-2">{{$product->name}}</div></a>
+                <img src="{{asset('images/')}}/{{$product->image}}" alt="" width="60" height="50">
+                    <div class="p-2">{{$product->name}}</div>
                 </td>
                 <td class="link">
-                    <a href="{{ route('viewBrand') }}"><div class="p-2">{{$product->brandname}}</div></a>
+                    <div class="p-2" style="color: red; font-weight: bold;">{{$product->brandname}}</div>
                 </td>
                 <td class="link">
-                    <a href="{{ route('viewCategory') }}"><div class="p-2">{{$product->catname}}</div></a>
+                    <div class="p-2" style="color: red; font-weight: bold;">{{$product->catname}}</div>
                 </td>
                 <td class="link">
-                    <div class="p-2" style="color: red">{{$product->quantity}}</div>
+                    <div class="p-2" style="color: red; font-weight: bold;">{{$product->quantity}}</div>
                 </td>
                 <td class="link">
-                    <a href="{{ route('viewSupplier') }}"><div class="p-2">{{$product->supname}}</div></a>
+                    <div class="p-2" style="color: red; font-weight: bold;">{{$product->supname}}</div>
                 </td>
                 <td>
                     <Button type="button" class="editBtn">
-                        <a href="{{ route('editProduct',['id'=>$product->id]) }}" class="editProduct" title="Edit" data-toggle="tooltip">Edit</a>
+                        <a href="{{ route('editProduct',['id'=>$product->id]) }}" class="editProduct fa fa-edit" title="View details" data-toggle="tooltip"></a>
                     </Button>
 
                     <button type="button" class="deleteBtn">
-                        <a href="{{ route('deleteProduct',['id'=>$product->id]) }}" class="deleteProduct" title="Delete" data-toggle="tooltip" onclick="return confirm('Are you sure?')">Delete</a>
+                        <a href="{{ route('deleteProduct',['id'=>$product->id]) }}" class="deleteProduct fa fa-trash-o" title="Delete" data-toggle="tooltip" onclick="return confirm('Are you sure?')"></a>
                     </button>
                 </td>
             </tr>
@@ -98,31 +98,31 @@
                 <td width="50">
                 </td>
                 <td class="link">
-                    <a href="{{ route('editProduct',['id'=>$product->id]) }}"><div class="p-2" >{{$product->productID}}</div></a>
+                    <div class="p-2" >{{$product->productID}}</div>
                 </td>
                 <td class="link">
-                <a href="{{ route('editProduct',['id'=>$product->id]) }}"><img src="{{asset('images/')}}/{{$product->image}}" alt="" width="60" height="50"></a>
-                    <a href="{{ route('editProduct',['id'=>$product->id]) }}"><div class="p-2">{{$product->name}}</div></a>
+                <img src="{{asset('images/')}}/{{$product->image}}" alt="" width="60" height="50">
+                    <div class="p-2">{{$product->name}}</div>
                 </td>
                 <td class="link">
-                    <a href="{{ route('viewBrand') }}"><div class="p-2">{{$product->brandname}}</div></a>
+                    <div class="p-2">{{$product->brandname}}</div>
                 </td>
                 <td class="link">
-                    <a href="{{ route('viewCategory') }}"><div class="p-2">{{$product->catname}}</div></a>
+                    <div class="p-2">{{$product->catname}}</div>
                 </td>
                 <td class="link">
                     <div class="p-2">{{$product->quantity}}</div>
                 </td>
                 <td class="link">
-                    <a href="{{ route('viewSupplier') }}"><div class="p-2">{{$product->supname}}</div></a>
+                    <div class="p-2">{{$product->supname}}</div>
                 </td>
                 <td>
                     <Button type="button" class="editBtn">
-                        <a href="{{ route('editProduct',['id'=>$product->id]) }}" class="editProduct" title="Edit" data-toggle="tooltip">Edit</a>
+                        <a href="{{ route('editProduct',['id'=>$product->id]) }}" class="editProduct fa fa-edit" title="Edit" data-toggle="tooltip"></a>
                     </Button>
 
                     <button type="button" class="deleteBtn">
-                        <a href="{{ route('deleteProduct',['id'=>$product->id]) }}" class="deleteProduct" title="Delete" data-toggle="tooltip" onclick="return confirm('Are you sure?')">Delete</a>
+                        <a href="{{ route('deleteProduct',['id'=>$product->id]) }}" class="deleteProduct fa fa-trash-o" title="Delete" data-toggle="tooltip" onclick="return confirm('Are you sure?')"></a>
                     </button>
                 </td>
             </tr>
@@ -137,20 +137,9 @@
             </tr>
 
         @endforelse
-
         </tbody>
 
         </table>
-
-        <form action="{{route('storeUpProduct')}}" method="post" enctype="multipart/form-data">
-        @csrf
-        <div class="form-group">
-            <label for="uploaded_file">Bulk upload with csv: </label>
-            <input type="file" name="uploaded_file" class="form-control">
-        </div>
-        <button type="submit" class="">UPLOAD</button> <div><a href="{{ url('admin/bulkUploadInstruction') }}">how to bulk updload?</a></div>
-        </form>
-
     </div>
 
 

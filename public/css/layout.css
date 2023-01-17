@@ -367,22 +367,31 @@
 }
 
 .deleteBtn {
-  background-color: #f44336;
-  border: none;
-  padding: 10px 15px;
+  border: 1px solid black;
+  padding: 5px 10px;
   border-radius: 10px;
+  font-size: 20px;
 }
+.deleteBtn a{
+  text-decoration: none;
+  color:#f44336; 
+ }
 
 button a {
   text-decoration: none;
   color: white;
 }
 
-.editBtn {
-  background-color: #008CBA;
-  border: none;
-  padding: 10px 15px;
+.editBtn {  
+  border: 1px solid black;
+  padding: 5px 10px;
   border-radius: 10px;
+  font-size: 20px;
+}
+
+.editBtn a{
+  text-decoration: none;
+  color:#008CBA; 
 }
 
 .printPOBtn {
@@ -531,15 +540,16 @@ ul.pagination li a {
 }
 
 .backBtn {
-  background-color: #f44336;
-  border: none;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
   padding: 10px 15px;
   border-radius: 10px;
 }
 
 .backBtn a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .subBtn {

@@ -14,7 +14,7 @@
             <div class="addProBtn">
                 <div class="p-3">
                     <Button type="button" class="addButton">
-                        <a href="{{ route('insertSupplier') }}" class="addProduct" title="New" data-toggle="tooltip">+Add Supplier</a>
+                        <a href="{{ route('insertSupplier') }}" class="addProduct" title="New" data-toggle="tooltip"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Add Supplier</a>
                     </Button>
                 </div>
             </div>
@@ -54,12 +54,12 @@
                     <td>{{$suppliers->contactPerson}}</td>
                     <td>{{$suppliers->status}}</td>
                     <td>
-                        <Button type="button" class="addButton">
-                            <a href="{{ route('editSupplier',['id'=>$suppliers->id]) }}" class="editCategory" title="Edit" data-toggle="tooltip">Edit</a>
+                        <Button type="button" class="editBtn">
+                            <a href="{{ route('editSupplier',['id'=>$suppliers->id]) }}" class="editCategory fa fa-edit" title="Edit" data-toggle="tooltip"></a>
                         </Button>
 
                         <button type="button" class="deleteBtn">
-                            <a href="{{ route('deleteSupplier',['id'=>$suppliers->id]) }}" class="deleteSupplier" title="Delete" data-toggle="tooltip" onclick="return confirm('Are you sure?')">Delete</a> 
+                            <a href="{{ route('deleteSupplier',['id'=>$suppliers->id]) }}" class="deleteSupplier fa fa-trash-o" title="Delete" data-toggle="tooltip" onclick="return confirm('Are you sure?')"></a> 
                         </button>
                     </td>
                     </tr>

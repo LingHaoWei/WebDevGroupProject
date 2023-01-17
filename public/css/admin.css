@@ -36,9 +36,9 @@
     padding: 55px 55px 37px 55px;
     z-index: 100;
     transition: all 0.5s ease;
-    background: linear-gradient(-45deg, #adaff1, #7174ff, #adaff1, #8486ff);
+    background: linear-gradient(-45deg, #adaff1, #5b5ef5, #adaff1, #5b5ef5);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
 }
 @keyframes gradient {
     0% {
@@ -71,7 +71,8 @@
 .form-title {
     font-family:cambria,'Times New Roman', Times, serif;
     font-size: 40px;
-    color: rgb(117, 241, 250);
+    font-weight: bold;
+    color: white;
     line-height: 1.5;
     text-align: center;
     display: block;
@@ -79,6 +80,8 @@
 
 .navbar {
     width: 100%;
+    color: white;
+    font-weight: bold;
     position: relative;
     border-bottom: 2px solid rgba(0, 0, 0, 0.24);
     margin-bottom: 30px;
@@ -125,16 +128,19 @@
     display: inline-block;
     border-radius: 25px;
     padding: 10px 32px;
-    color:rgb(80, 112, 170);
-    background-color: rgb(144, 255, 231);
-    border: 2px solid #a7dfa8;
+    color:white;
+    background-color: rgb(0, 76, 218);
+    border: 2px solid rgb(126, 170, 252);
 }
 
 .btn1:hover {
     background-color: aliceblue;
     color:black;
     align-items: center;
-    padding: 10px 34px;
+    border: 2px solid #00d7c3;
+    padding: 10px 32px;
+    /*background-image: linear-gradient(90deg, #99e2fa 0%, #d5e3ff 60%, #99e2fa 100%);
+    animation:slidebg 5s linear infinite; */
 }
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
  @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
@@ -142,12 +148,4 @@
     to {
       background-position:20vw;
     }
-}
- .btn1:hover{
-    background-image: linear-gradient(90deg, #99e2fa 0%, #d5e3ff 60%, #99e2fa 100%);
-    animation:slidebg 5s linear infinite;
- }
- .btn1:hover {
-    box-shadow: 0 0 10px 0 #b1f0e9 inset, 0 0 20px 2px #89fcf0;
-    border: 1px solid #00d7c3;
 }

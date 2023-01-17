@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Online Store</title>
+        <title>Home</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -22,7 +22,7 @@
         <div class="container">
           <a class="navbar-brand logo_h" href="{{ url('') }}">
 			  <!--<img src="images/logo.png" alt="">-->
-			  Online Store
+			  CyberPro Store
 			</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,7 +105,6 @@
 							<ul class="list">
 								<li><a href="{{ url('') }}">Home</a></li>
 								<li><a href="{{ url('shoppingShowProductPage') }}">Product</a></li>
-								<li><a href="{{ url('shoppingContactPage') }}">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -115,17 +114,17 @@
 							<div class="ml-40">
 								<p class="sm-head">
 									<span class="fa fa-location-arrow"></span>
-									Head Office
+									Physical Store
 								</p>
-								<p>123, Main Street, Your City</p>
+								<p>123, Jalan Main Street, Johor Bahru, Johor</p>
 
 								<p class="sm-head">
 									<span class="fa fa-phone"></span>
 									Phone Number
 								</p>
 								<p>
-									+123 456 7890 <br>
-									+123 456 7890
+									+60 16 887 9998 <br>
+									+06 12 778 9909
 								</p>
 
 								<p class="sm-head">
@@ -133,8 +132,9 @@
 									Email
 								</p>
 								<p>
-									free@infoexample.com <br>
-									www.infoexample.com
+									AdminLing@cyberpro.com <br>
+                  AdminAng@cyberpro.com <br>
+                  AdminTee@cyberpro.com <br>
 								</p>
 							</div>
 						</div>

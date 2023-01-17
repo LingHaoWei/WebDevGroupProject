@@ -14,7 +14,7 @@
             <div class="addProBtn">
                 <div class="p-3">
                     <Button type="button" class="addButton">
-                        <a href="{{ route('insertCategory') }}" class="addProduct" title="New" data-toggle="tooltip">+Add Category</a>
+                        <a href="{{ route('insertCategory') }}" class="addProduct" title="New" data-toggle="tooltip"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Add Category</a>
                     </Button>
                 </div>
             </div>
@@ -50,12 +50,12 @@
                     <td>{{$categories->name}}</td>
                     <td>{{$categories->status}}</td>
                     <td>
-                        <Button type="button" class="addButton">
-                            <a href="{{ route('editCategory',['id'=>$categories->id]) }}" class="editCategory" title="Edit" data-toggle="tooltip">Edit</a>
+                        <Button type="button" class="editBtn">
+                            <a href="{{ route('editCategory',['id'=>$categories->id]) }}" class="editCategory fa fa-edit" title="Edit" data-toggle="tooltip"></a>
                         </Button>
 
                         <button type="button" class="deleteBtn">
-                            <a href="{{ route('deleteCategory',['id'=>$categories->id]) }}" class="deleteCategory" title="Delete" data-toggle="tooltip" onclick="return confirm('Are you sure?')">Delete</a> 
+                            <a href="{{ route('deleteCategory',['id'=>$categories->id]) }}" class="deleteCategory fa fa-trash-o" title="Delete" data-toggle="tooltip" onclick="return confirm('Are you sure?')"></a> 
                         </button>
                     </td>
                     </tr>

@@ -48,8 +48,8 @@
                     <td>{{ $ord->username }}</td>
                     <td>{{$ord->status}}</td>
                     <td>
-                        <Button type="button" class="addButton">
-                        <a href="{{ route('editOrder',['id'=>$ord->orderID]) }}" class="editOrder" title="Edit" data-toggle="tooltip">Edit</a>
+                        <Button type="button" class="editBtn">
+                        <a href="{{ route('editOrder',['id'=>$ord->orderID]) }}" class="editOrder fa fa-edit" title="Edit" data-toggle="tooltip"></a>
                         </Button>
                     </td>
                     
@@ -65,8 +65,8 @@
                     <td>{{ $ord->username }}</td>
                     <td>{{$ord->status}}</td>
                     <td>
-                        <Button type="button" class="addButton">
-                        <a href="{{ route('editOrder',['id'=>$ord->orderID]) }}" class="editOrder" title="Edit" data-toggle="tooltip">Edit</a>
+                        <Button type="button" class="editBtn">
+                        <a href="{{ route('editOrder',['id'=>$ord->orderID]) }}" class="editOrder fa fa-edit" title="Edit" data-toggle="tooltip"></a>
                         </Button>
                     </td>
                     
