@@ -19,48 +19,48 @@
         <div class="form-group addProRow1">
             <label class="col-md-4 col-form-label text-md-right" for="supplierID">Supplier ID</label>
             <div class="col-md-2">
-                <input type="text" class="form-control" id="SupplierID" name="SupplierID" style="background:transparent;">
+                <input type="text" class="form-control" id="SupplierID" name="SupplierID" style="background:transparent;" required>
             </div>
             <label class="col-md-4 col-form-label text-md-right" for="supplierName">Company Name</label>
             <div class="col-md-4">
-                <input type="text" class="form-control" id="SupplierName" name="SupplierName" style=" background:transparent;" >
+                <input type="text" class="form-control" id="SupplierName" name="SupplierName" style=" background:transparent;" required>
             </div>
             <label class="col-md-4 col-form-label text-md-right" for="CompanyEmail">Company Email</label>
             <div class="col-md-4">
-                <input type="text" class="form-control" id="CompanyEmail" name="CompanyEmail" style=" background:transparent;">
+                <input type="text" class="form-control" id="CompanyEmail" name="CompanyEmail" style=" background:transparent;" required>
             </div>
         </div>
 
         <div class="form-group addProRow2">
             <label class="" for="contactPerson">Contact Person</label>
             <div class="">
-                <input type="text" class="form-control" id="ContactPerson" name="ContactPerson" style=" background:transparent;">
+                <input type="text" class="form-control" id="ContactPerson" name="ContactPerson" style=" background:transparent;" required>
             </div>
             <label class="" for="contactNumber">Contact Number</label>
             <div class="">
-                <input type="text" class="form-control" id="ContactNumber" name="ContactNumber" style=" background:transparent;">
+                <input type="text" class="form-control" id="ContactNumber" name="ContactNumber" style=" background:transparent;" required>
             </div> 
             <label class="" for="emailAddress">Contact Email</label>
             <div class="">
-                <input type="text" class="form-control" id="EmailAddress" name="EmailAddress" style=" background:transparent;">
+                <input type="text" class="form-control" id="EmailAddress" name="EmailAddress" style=" background:transparent;" required>
             </div>
         </div>
         <div class="form-group addProRow3">
             <label class="" for="supplierAddress">Address</label>
             <div class="">
-                <textarea type="text" class="form-control" id="SupplierAddress" name="SupplierAddress" style=" background:transparent;"></textarea>
+                <textarea type="text" class="form-control" id="SupplierAddress" name="SupplierAddress" style=" background:transparent;" required></textarea>
             </div>
             <label class="" for="City">City</label>
             <div class="">
-                <input type="text" class="form-control" id="City" name="City" style=" background:transparent;">
+                <input type="text" class="form-control" id="City" name="City" style=" background:transparent;" required>
             </div>
             <label class="" for="State">State</label>
             <div class="">  
-                <input type="text" class="form-control" id="State" name="State" style=" background:transparent;">
+                <input type="text" class="form-control" id="State" name="State" style=" background:transparent;" required>
             </div>
             <label class="" for="ZipCode">Zip Code</label>
             <div class="">
-                <input type="text" class="form-control" id="ZipCode" name="ZipCode" style=" background:transparent;">
+                <input type="text" class="form-control" id="ZipCode" name="ZipCode" style=" background:transparent;" required>
             </div>
         </div>
 

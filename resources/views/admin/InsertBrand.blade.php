@@ -21,11 +21,11 @@
       <div class="form-group addProRow1">
         <label class="" for="brandID">Brand ID</label>
         <div class="">
-          <input type="text" class="form-control" id="BrandID" name="BrandID" style="background:transparent;">
+          <input type="text" class="form-control" id="BrandID" name="BrandID" style="background:transparent;" required>
         </div>
         <label class="" for="Brand Name">Name</label>
         <div class="">
-          <input type="text" class="form-control" id="BrandName" name="BrandName" style=" background:transparent;">
+          <input type="text" class="form-control" id="BrandName" name="BrandName" style=" background:transparent;" required>
         </div>
         <label class="" for="Category status">Status</label>
         <div class="">

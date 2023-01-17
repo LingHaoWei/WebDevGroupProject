@@ -22,11 +22,11 @@
       <div class="form-group addProRow1">
         <label class="" for="categoryID">Category ID</label>
         <div class="">
-          <input type="text" class="form-control" id="CategoryID" name="CategoryID" style="background:transparent;" >
+          <input type="text" class="form-control" id="CategoryID" name="CategoryID" style="background:transparent;" required>
         </div>
         <label class="" for="Category Name">Name</label>
         <div class="col-md-5">
-          <input type="text" class="form-control" id="CategoryName" name="CategoryName" style=" background:transparent;" >
+          <input type="text" class="form-control" id="CategoryName" name="CategoryName" style=" background:transparent;" required>
         </div>
         <label class="" for="Category status">Status</label>
         <div class="">

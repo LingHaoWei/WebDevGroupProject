@@ -19,27 +19,27 @@
                 <div class="form-group addProRow1">
                     <label class="" for="Product ID">Product ID</label>
                     <div class="">
-                        <input type="text" class="form-control" id="productID" name="productID">
+                        <input type="text" class="form-control" id="productID" name="productID" required>
                     </div>
                     <label class="" for="Product Name">Product Name</label>
                     <div class="">
-                        <input type="text" class="form-control" id="productName" name="productName">
+                        <input type="text" class="form-control" id="productName" name="productName" required>
                     </div>
                     <label class="" for="Product Variety">Variety</label>
                     <div class="">
-                        <input type="text" class="form-control" id="productVariety" name="productVariety">
+                        <input type="text" class="form-control" id="productVariety" name="productVariety" required>
                     </div>
                     <label class="" for="Product SKU">Product SKU</label>
                     <div class="">
-                        <input type="text" class="form-control" id="productSKU" name="productSKU">
+                        <input type="text" class="form-control" id="productSKU" name="productSKU" required>
                     </div>
                     <label class="" for="Product Image">Image</label>
                     <div class="">
-                        <input type="file" class="form-control" id="product-image" name="product-image">
+                        <input type="file" class="form-control" id="product-image" name="product-image" required>
                     </div>
                     <label class="" for="Supplier ID"><a href="{{ route('insertSupplier') }}" style="text-decoration:none; color:black;">Supplier</a></label>
                     <div class="">
-                    <select name="SupplierID" id="SupplierID" class="form-control">
+                    <select name="SupplierID" id="SupplierID" class="form-control" required>
 
                         <option value="">---Select Supplier---</option>
 
@@ -56,19 +56,19 @@
                 <div class="form-group addProRow2">
                     <label class="" for="Product Price">Price</label>
                     <div class="">
-                        <input type="text" class="form-control" id="productPrice" name="productPrice">
+                        <input type="text" class="form-control" id="productPrice" name="productPrice" required>
                     </div>
                     <label class="" for="Product unitPrice">Unit Price</label>
                     <div class="">
-                        <input type="text" class="form-control" id="productUnitPrice" name="productUnitPrice">
+                        <input type="text" class="form-control" id="productUnitPrice" name="productUnitPrice" required>
                     </div>
                     <label class="" for="Product Quantity">Quantity</label> 
                     <div class="">
-                        <input type="number" class="form-control" id="productQuantity" name="productQuantity">
+                        <input type="number" class="form-control" id="productQuantity" name="productQuantity" required>
                     </div>
                     <label class="" for="Category ID"><a href="{{ route('insertCategory') }}" style="text-decoration:none; color:black;">Category</a></label>
                     <div class="">
-                    <select name="categoryID" id="categoryID" class="form-control">
+                    <select name="categoryID" id="categoryID" class="form-control" required>
 
                         <option value="">---Select Category---</option>
 
@@ -82,7 +82,7 @@
                     </div>
                     <label class="" for="Brand ID"><a href="{{ route('insertBrand') }}" style="text-decoration:none; color:black;">Brand</a></label>
                     <div class="">
-                    <select name="brandID" id="brandID" class="form-control">
+                    <select name="brandID" id="brandID" class="form-control" required>
 
                         <option value="">---Select Brand---</option>
 
@@ -100,7 +100,7 @@
                 <div class="form-group addProRow3">
                     <label class="" for="Product Desciption">Description</label>
                     <div class="">
-                        <textarea type="text" class="form-control" id="productDescription" name="productDescription"></textarea>
+                        <textarea type="text" class="form-control" id="productDescription" name="productDescription" required></textarea>
                     </div>
                 </div>
 
