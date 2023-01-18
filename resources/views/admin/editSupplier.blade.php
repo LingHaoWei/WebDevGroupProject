@@ -23,45 +23,45 @@
             <div class="">
                 <input type="text" class="form-control" id="SupplierID" name="SupplierID" value="{{$supplier->supplierID}}" readonly>
             </div>
-            <label class="" for="supplierName">Company Name</label>
+            <label class="" for="supplierName">Company Name</label><span class="colorRed">*</span>
             <div class="">
                 <input type="text" class="form-control" id="SupplierName" name="SupplierName" style=" background:transparent;" value="{{$supplier->supplierName}}">
             </div>
-            <label class="" for="CompanyEmail">Company Email</label>
+            <label class="" for="CompanyEmail">Company Email</label><span class="colorRed">*</span>
             <div class="">
-                <input type="text" class="form-control" id="CompanyEmail" name="CompanyEmail" style=" background:transparent;" value="{{$supplier->companyEmail}}">
+                <input type="email" class="form-control" id="CompanyEmail" name="CompanyEmail" style=" background:transparent;" value="{{$supplier->companyEmail}}">
             </div>
         </div>
 
         <div class="form-group addProRow2">
-            <label class="" for="contactPerson">Contact Person</label>
+            <label class="" for="contactPerson">Contact Person</label><span class="colorRed">*</span>
             <div class="">
                 <input type="text" class="form-control" id="ContactPerson" name="ContactPerson" style=" background:transparent;" value="{{$supplier->contactPerson}}">
             </div>
-            <label class="" for="contactNumber">Contact Number</label>
+            <label class="" for="contactNumber">Contact Number</label><span class="colorRed">*</span>
             <div class="">
                 <input type="text" class="form-control" id="ContactNumber" name="ContactNumber" style=" background:transparent;" value="{{$supplier->contactNumber}}">
             </div>
-            <label class="" for="emailAddress">Contact Email</label>
+            <label class="" for="emailAddress">Contact Email</label><span class="colorRed">*</span>
             <div class="">
-                <input type="text" class="form-control" id="EmailAddress" name="EmailAddress" style=" background:transparent;" value="{{$supplier->emailAddress}}">
+                <input type="email" class="form-control" id="EmailAddress" name="EmailAddress" style=" background:transparent;" value="{{$supplier->emailAddress}}">
             </div>
         </div>
 
         <div class="form-group addProRow3">
-            <label class="" for="supplierAddress">Address</label>
+            <label class="" for="supplierAddress">Address</label><span class="colorRed">*</span>
             <div class="">
                 <textarea type="text" class="form-control" id="SupplierAddress" name="SupplierAddress" style=" background:transparent;" value="">{{$supplier->address}}</textarea>
             </div>
-            <label class="" for="City">City</label>
+            <label class="" for="City">City</label><span class="colorRed">*</span>
             <div class="">
                 <input type="text" class="form-control" id="City" name="City" style=" background:transparent;" value="{{$supplier->city}}">
             </div>
-            <label class="" for="State">State</label>
+            <label class="" for="State">State</label><span class="colorRed">*</span>
             <div class="">
                 <input type="text" class="form-control" id="State" name="State" style=" background:transparent;"value="{{$supplier->state}}">
             </div>
-            <label class="" for="ZipCode">Zip Code</label>
+            <label class="" for="ZipCode">Zip Code</label><span class="colorRed">*</span>
             <div class="">
                 <input type="number" class="form-control" id="ZipCode" name="ZipCode" style=" background:transparent;" length="5" value="{{$supplier->zipcode}}">
             </div>
@@ -73,14 +73,14 @@
                 @if($supplier->status == 'Available')
                 <select name="status" class="form-control" required value="{{$supplier->status}}">
                     <option value="">---Select Status---</option>
-                    <option value="Available" selected>Active</option>
-                    <option value="Unavailable">Inactive</option>
+                    <option value="Available" selected>Available</option>
+                    <option value="Unavailable">Unavailable</option>
                 </select>
                 @elseif($supplier->status == 'Unavailable')
                 <select name="status" class="form-control" required value="{{$supplier->status}}">
                     <option value="">---Select Status---</option>
-                    <option value="Available">Active</option>
-                    <option value="Unavailable" selected>Inactive</option>
+                    <option value="Available">Available</option>
+                    <option value="Unavailable" selected>Unavailable</option>
                 </select>
                 @endif
             </div>

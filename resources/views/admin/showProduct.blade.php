@@ -49,13 +49,13 @@
             <thead>
                 <tr>
                 <th scope="col"></th>
-                <th scope="col">ID</th>
-                <th scope="col">Product</th>
+                <th scope="col">Product ID</th>
+                <th scope="col">Product Name</th>
                 <th scope="col">Brand</th>
                 <th scope="col">Category</th>
                 <th scope="col">Quantity</th>
                 <th scope="col">Vendor</th>
-                <th scope="col">Option</th>
+                <th scope="col">Actions</th>
                 </tr>
             </thead>
         <tbody>
@@ -132,7 +132,7 @@
                 <td width="50">
                 </td>
                 <td class="link">
-                    no such product
+                    No product found.
                 </td>
             </tr>
 

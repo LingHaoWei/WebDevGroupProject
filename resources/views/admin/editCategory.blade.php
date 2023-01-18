@@ -22,28 +22,28 @@
       <input type="hidden" class="form-control" id="id" name="id" value="{{$category->id}}">
 
       <div class="form-group addProRow1">
-        <label class="" for="categoryID">Category ID</label>
+        <label class="" for="categoryID">Category ID</label><span class="colorRed">*</span>
         <div class="">
           <input type="text" class="form-control" id="CategoryID" name="CategoryID" value="{{$category->categoryID}}" readonly>
         </div>
-        <label class="" for="Category Name">Name</label>
+        <label class="" for="Category Name">Name</label><span class="colorRed">*</span>
         <div class="">
-          <input type="text" class="form-control" id="CategoryName" name="CategoryName" style=" background:transparent;" value="{{$category->name}}">
+          <input type="text" class="form-control" id="CategoryName" name="CategoryName" style=" background:transparent;" value="{{$category->name}}" required>
         </div>
-        <label class="col-md-4 col-form-label text-md-right" for="Category status">Status</label>
+        <label class="col-md-4 col-form-label text-md-right" for="Category status">Status</label><span class="colorRed">*</span>
         
         <div class="col-md-6">
           @if($category->status == 'Available')
           <select name="status" class="form-control" required>
             <option value="">---Select Status---</option>
-            <option value="Available" selected>Active</option>
-            <option value="Unavailable">Inactive</option>
+            <option value="Available" selected>Available</option>
+            <option value="Unavailable">Unavailable</option>
           </select>
           @elseif($category->status == 'Unavailable')
           <select name="status" class="form-control" required>
             <option value="">---Select Status---</option>
-            <option value="Available">Active</option>
-            <option value="Unavailable" selected>Inactive</option>
+            <option value="Available">Available</option>
+            <option value="Unavailable" selected>Unavailable</option>
           </select>
           @endif
         </div>

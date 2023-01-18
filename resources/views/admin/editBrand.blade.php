@@ -20,28 +20,28 @@
       @foreach($brand as $brand)
       <input type="hidden" class="form-control" id="id" name="id" value="{{$brand->id}}">
       <div class="form-group row addProRow1">
-        <label class="" for="brandID">Brand ID</label>
+        <label class="" for="brandID">Brand ID</label><span class="colorRed">*</span>
         <div class="">
           <input type="text" class="form-control" id="BrandID" name="BrandID" value="{{$brand->brandID}}" readonly>
         </div>
-        <label class="" for="Brand Name">Name</label>
+        <label class="" for="Brand Name">Name</label><span class="colorRed">*</span>
         <div class="">
           <input type="text" class="form-control" id="BrandName" name="BrandName" style=" background:transparent;" value="{{$brand->name}}">
         </div>
-        <label class="" for="Category status">Status</label>
-        
+        <label class="" for="Category status">Status</label><span class="colorRed">*</span>
+
         <div class="">
         @if($brand->status == 'Available')
           <select name="status" class="form-control" required>
             <option value="">---Select Status---</option>
-            <option value="Available" selected>Active</option>
-            <option value="Unavailable">Inactive</option>
+            <option value="Available" selected>Available</option>
+            <option value="Unavailable">Unavailable</option>
           </select>
           @elseif($brand->status == 'Unavailable')
           <select name="status" class="form-control" required>
             <option value="">---Select Status---</option>
-            <option value="Available" >Active</option>
-            <option value="Unavailable" selected>Inactive</option>
+            <option value="Available" >Available</option>
+            <option value="Unavailable" selected>Unavailable</option>
           </select>
           @endif
         </div>

@@ -39,7 +39,7 @@
                     <th>Company Name</th>
                     <th>Contact Person</th>
                     <th>Status</th>
-                    <th>Option</th>
+                    <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -32,7 +32,7 @@
                     <th width="12%">Payment Status</th>
                     <th>Customer</th>
                     <th>Status</th>
-                    <th>Option</th>
+                    <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,9 +41,9 @@
                     <td width="60">
                     </td>
                     <td class="link">
-                        <a href="{{ route('editOrder',['id'=>$ord->orderID]) }}" class="editOrder" title="Edit" data-toggle="tooltip"><div class="p-2">#{{$ord->orderID}}</div></a>
+                        <a href="{{ route('editOrder',['id'=>$ord->orderID]) }}" class="editOrder" title="Edit" data-toggle="tooltip"><div class="p-2"><strong>#{{$ord->orderID}}</strong></div></a>
                     </td>
-                    <td>{{$ord->paymentStatus}}</td>
+                    <td><span class="badge badge-success">{{$ord->paymentStatus}}</span></td>
                     <td>{{ $ord->username }}</td>
                     @if($ord->status == 'Fulfilled')
                     <td><span class="badge badge-success">{{$ord->status}}</span></td>

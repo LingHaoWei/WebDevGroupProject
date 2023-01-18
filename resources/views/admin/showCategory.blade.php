@@ -35,10 +35,10 @@
                 <thead>
                     <tr>
                     <th scope="col"></th>
-
+                    <th>Category ID</th>
                     <th>Name</th>
                     <th>Status</th>
-                    <th>Option</th>
+                    <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,7 +46,7 @@
                     <tr>
                     <td width="60"> 
                     </td>
-
+                    <td>{{$categories->categoryID}}</td>
                     <td>{{$categories->name}}</td>
                     @if($categories->status == 'Available')
                     <td><span class="badge badge-success">{{$categories->status}}</span></td>

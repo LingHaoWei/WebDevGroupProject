@@ -36,10 +36,10 @@
             <thead>
                 <tr>
                 <th scope="col"></th>
-
+                <th>Brand ID</th>
                 <th>Name</th>
                 <th>Status</th>
-                <th>Option</th>
+                <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,7 +47,7 @@
                 <tr>
                 <td width="60"> 
                 </td>
-
+                <td>{{$brands->brandID}}</td>
                 <td>{{$brands->name}}</td>
                 @if($brands->status == 'Available')
                 <td><span class="badge badge-success">{{$brands->status}}</span></td>

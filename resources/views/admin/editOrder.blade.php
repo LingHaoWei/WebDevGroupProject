@@ -79,8 +79,8 @@
 
             <label class="" for="Document No"><b>Customer Name</b></label>
             <div><input type="text" class="form-control" id="CustomerName" name="CustomerName" value="{{$or->username}}" readonly /></div>
-            <label class="" for="Document No"><b>Shipping Address</b></label>
-            <div><input type="text" class="form-control" id="ShippingAddress" name="ShippingAddress" value="{{$or->address}}" /></div>
+            <label class="" for="Document No"><b>Shipping Address</b></label><span class="colorRed">*</span>
+            <div><input type="text" class="form-control" id="ShippingAddress" name="ShippingAddress" value="{{$or->address}}" required/></div>
             
 
             </div>
@@ -99,8 +99,8 @@
             <label class="" for="Document No"><b>Email Address</b></label>
             <div><input type="text" class="form-control" id="EmailAddress" name="EmailAddress" value="{{$or->useremail}}" readonly /></div>
 
-            <label class="" for="Document No"><b>Contact Number</b></label>
-            <div><input type="text" class="form-control" id="ContactNumber" name="ContactNumber" value="{{$or->contact}}" /></div>
+            <label class="" for="Document No"><b>Contact Number</b></label><span class="colorRed">*</span>
+            <div><input type="text" class="form-control" id="ContactNumber" name="ContactNumber" value="{{$or->contact}}" required/></div>
 
         </div>
         
@@ -168,24 +168,24 @@
 
         <div class="form-group printpoaddProRow4">
         @if($or->status == 'Cancelled')
-        <label class="" for="Order status"> <b>Status</b> </label>
+        <label class="" for="Order status"> <b>Status</b> </label><span class="colorRed">*</span>
                     <div class="">
                         <button class="deleteBtn" style="color:white;">
                             <a href="#">{{$or->status}}</a> 
                         </button>
                     </div>
         @elseif($or->status == 'Fulfilled')
-        <label class="" for="Order status">Status</label>
+        <label class="" for="Order status">Status</label><span class="colorRed">*</span>
                     <div class="">
-                    <select name="status" class="form-control" required style="width: 50%;">
+                    <select name="status" class="form-control" required style="width: 50%;" required>
                         <option value="">---Select Status---</option>
-                        <option value="Fulfilled" selected>Fulfill Order</option>
-                        <option value="Cancelled">Cancell Order</option>
+                        <option value="Fulfilled" selected>Fulfilled</option>
+                        <option value="Cancelled">Cancelled</option>
                     </select>
                     </div>
-            <label class="" for="Tracking No"><b>Tracking Number:</b></label>
+            <label class="" for="Tracking No"><b>Tracking Number:</b></label><span class="colorRed">*</span>
             <div class="">
-                <input type="text" class="form-control" id="TrackingNo" name="TrackingNo" value="{{$or->tracking_no}}" style="width: 50%; ">
+                <input type="text" class="form-control" id="TrackingNo" name="TrackingNo" value="{{$or->tracking_no}}" style="width: 50%;" required>
             </div>
             <div class="">
             <Button type="button" class="backBtn">
@@ -198,8 +198,8 @@
                     <div class="">
                     <select name="status" class="form-control" required style="width: 50%;">
                         <option value="">---Select Status---</option>
-                        <option value="Fulfilled">Fulfill Order</option>
-                        <option value="Cancelled">Cancell Order</option>
+                        <option value="Fulfilled">Fulfilled</option>
+                        <option value="Cancelled">Cancelled</option>
                     </select>
                     </div>
 

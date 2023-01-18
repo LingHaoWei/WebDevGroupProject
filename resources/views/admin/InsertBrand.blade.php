@@ -19,20 +19,20 @@
       @csrf
 
       <div class="form-group addProRow1">
-        <label class="" for="brandID">Brand ID</label>
+        <label class="" for="brandID">Brand ID</label><span class="colorRed">*</span>
         <div class="">
           <input type="text" class="form-control" id="BrandID" name="BrandID" style="background:transparent;" required>
         </div>
-        <label class="" for="Brand Name">Name</label>
+        <label class="" for="Brand Name">Name</label><span class="colorRed">*</span>
         <div class="">
           <input type="text" class="form-control" id="BrandName" name="BrandName" style=" background:transparent;" required>
         </div>
-        <label class="" for="Category status">Status</label>
+        <label class="" for="Category status">Status</label><span class="colorRed">*</span>
         <div class="">
           <select name="status" class="form-control" required>
             <option value="">---Select Status---</option>
-            <option value="Available">Active</option>
-            <option value="Unavailable">Inactive</option>
+            <option value="Available">Available</option>
+            <option value="Unavailable">Unavailable</option>
           </select>
         </div>
         <div class="">

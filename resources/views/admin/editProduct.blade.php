@@ -31,38 +31,38 @@
                     <div class="">
                         <input type="text" class="form-control" id="productID" name="productID" value="{{ $product->productID }}" readonly>
                     </div>
-                    <label class="" for="Product Name">Product Name</label>
+                    <label class="" for="Product Name">Product Name</label><span class="colorRed">*</span>
                     <div class="">
                         <input type="text" class="form-control" id="productName" name="productName" value="{{ $product->name }}">
                     </div>
-                    <label class="" for="Product Variety">Variety</label>
+                    <label class="" for="Product Variety">Variety</label><span class="colorRed">*</span>
                     <div class="">
                         <input type="text" class="form-control" id="productVariety" name="productVariety" value="{{ $product->productVariety }}">
                     </div>
-                    <label class="" for="Product SKU">Product SKU</label>
+                    <label class="" for="Product SKU">Product SKU</label><span class="colorRed">*</span>
                     <div class="">
                         <input type="text" class="form-control" id="productSKU" name="productSKU" value="{{ $product->productSKU }}">
                     </div>
-                    <label class="" for="Product Image">Image</label>
+                    <label class="" for="Product Image">Image</label><span class="colorRed">*</span>
                     <div class="">
                         <input type="file" class="form-control" id="product-image" name="product-image" value="{{ $product->image }}">
                     </div>
                 </div>
 
                 <div class="form-group addProRow2">
-                    <label class="" for="Product Price">Price</label>
+                    <label class="" for="Product Price">Price</label><span class="colorRed">*</span>
                     <div class="">
                         <input type="text" class="form-control" id="productPrice" name="productPrice" value="{{ $product->price }}">
                     </div>
-                    <label class="" for="Product unitPrice">Unit Price</label>
+                    <label class="" for="Product unitPrice">Unit Price</label><span class="colorRed">*</span>
                     <div class="">
                         <input type="text" class="form-control" id="productUnitPrice" name="productUnitPrice" value="{{ $product->unitPrice }}">
                     </div>
-                    <label class="" for="Product Quantity">Quantity</label>
+                    <label class="" for="Product Quantity">Quantity</label><span class="colorRed">*</span>
                     <div class="">
                         <input type="number" class="form-control" id="productQuantity" name="productQuantity" value="{{ $product->quantity }}">
                     </div>
-                    <label class="" for="Category ID">Category</label>
+                    <label class="" for="Category ID">Category</label><span class="colorRed">*</span>
                     <div class="">
                     <select name="categoryID" id="categoryID" class="form-control">
 
@@ -76,7 +76,7 @@
 
                     </select>
                     </div>
-                    <label class="" for="Brand ID">Brand</label>
+                    <label class="" for="Brand ID">Brand</label><span class="colorRed">*</span>
                     <div class="">
                     <select name="brandID" id="brandID" class="form-control">
 
@@ -90,7 +90,7 @@
 
                     </select>
                     </div>
-                    <label class="" for="Supplier ID">Supplier</label>
+                    <label class="" for="Supplier ID">Supplier</label><span class="colorRed">*</span>
                     <div class="">
                     <select name="SupplierID" id="SupplierID" class="form-control">
 
@@ -108,26 +108,26 @@
                 </div>
 
                 <div class="form-group addProRow3">
-                    <label class="" for="Product Desciption">Description</label>
+                    <label class="" for="Product Desciption">Description</label><span class="colorRed">*</span>
                     <div class="">
                         <textarea type="text" class="form-control" id="productDescription" name="productDescription" value="">{{ $product->description }}</textarea>
                     </div>
                 </div>
 
                 <div class="form-group addProRow4">
-                    <label class="" for="Brand status">Status</label>
+                    <label class="" for="Brand status">Status</label><span class="colorRed">*</span>
                     <div class="">
                     @if($product->status == 'Available')
                     <select name="status" class="form-control" required>
                         <option value="">---Select Status---</option>
-                        <option value="Available" selected>Active</option>
-                        <option value="Unavailable">Inactive</option>
+                        <option value="Available" selected>Available</option>
+                        <option value="Unavailable">Unavailable</option>
                     </select>
                     @elseif($product->status == 'Unavailable')
                     <select name="status" class="form-control" required>
                         <option value="">---Select Status---</option>
-                        <option value="Available">Active</option>
-                        <option value="Unavailable" selected>Inactive</option>
+                        <option value="Available">Available</option>
+                        <option value="Unavailable" selected>Unavailable</option>
                     </select>
                     @endif
                     </div>
