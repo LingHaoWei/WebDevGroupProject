@@ -1,4 +1,9 @@
-Login Account
+All the testing data is included in webdevproject.sql file in the folder. 
+
+
+***** ***** ***** ***** ***** ***** ***** *****
+
+Login Account(Admin)
 Email: admin@gmail.com
 Password: Password123
 (After migrating the admin table)
@@ -20,4 +25,25 @@ $model -> password = Hash::make('Password123');
 $model -> save();
 
 
+Login Account(Customer)
+Email: customer@gmail.com
+Password: customer123
 
+
+***** ***** ***** ***** ***** ***** ***** *****
+
+Payment, stripe developer to do testing. 
+credit card number: 4242424242424242
+*expired date cannot put before current date.
+
+Link: https://dashboard.stripe.com/test/developers
+
+
+***** ***** ***** ***** ***** ***** ***** *****
+
+Fulfill email, mailtrap to do testing
+
+Link: https://mailtrap.io/inboxes/2045953/messages/3243369324
+
+
+***** ***** ***** ***** ***** ***** ***** *****
